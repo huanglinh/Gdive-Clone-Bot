@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM anasty17/mltb:heroku
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
@@ -22,4 +22,4 @@ COPY . .
 RUN chmod +x start.sh
 RUN chmod +x gclone
 
-CMD ["bash","start.sh"]
+CMD ["bash", "start.sh"]
